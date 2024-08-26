@@ -29,11 +29,25 @@ function Tweet() {
   return (
     <section className="tweetpage">
       <h1 className="tp_title">List of tweets</h1>
-
+      <hr></hr>
+      <h3>Tweet input:</h3>
       <form method="POST" action="/addTweet">
         <div class="input-group justify-content-center">
           <div class="input-group-prepend">
             <input type="text" name="tweetInput" class="form-control" />
+            <input type="submit" value="Submit" class="btn btn-primary mb-2" />
+          </div>
+        </div>
+      </form>
+      <hr></hr>
+      <h3>Contact info:</h3>
+      <form method="POST" action="/contact/send">
+        <div class="input-group justify-content-center">
+          <div class="input-group-prepend">
+            Name: <input type="text" name="name" class="form-control" />
+            Email: <input type="text" name="email" class="form-control" />
+            Website: <input type="text" name="website" class="form-control" />
+            Message: <input type="text" name="message" class="form-control" />
             <input type="submit" value="Submit" class="btn btn-primary mb-2" />
           </div>
         </div>

@@ -42,3 +42,8 @@
 .navbar-nav .nav-item:first-child {
   margin-right: 50px; /* Adjust the value as needed */
 }
+.input-group-prepend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

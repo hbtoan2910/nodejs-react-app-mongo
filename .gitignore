@@ -6,7 +6,7 @@
 *.log
 
 # Environment variables
-.env
+#.env
 
 # Ignore build files
 dist/
